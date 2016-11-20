@@ -1,0 +1,115 @@
+-----------------------------
+[<tr class="ipodatatable_tr">
+<td colspan="6"><h1 class="h1_title_ipodata">（株）エイトレッド</h1>
+<div class="ipodatatble_divchart">
+<a class="minkabubtn" href="http://minkabu.jp/stock/3969" target="_blank">▶株価・チャート</a> 
+        <a class="kaijibtn" href="http://post.tokyoipo.com/visitor/search_by_brand/index.php?brand_code=3969" target="_blank">▶開示情報</a>
+</div>
+</td>
+</tr>, <tr>
+<th width="10%">コード</th>
+<th width="25%">業種</th>
+<th width="10%">市場</th>
+<th width="30%">主幹事</th>
+<th width="12%">承認日</th>
+<th width="13%">公開日</th>
+</tr>, <tr>
+<td class="main_data aligncenter">3969</td>
+<td class="main_data aligncenter">情報・通信業</td>
+<td class="main_data aligncenter">マザ</td>
+<td class="main_data">大和証券      </td>
+<td class="main_data aligncenter">2016/11/18</td>
+<td class="main_data aligncenter">2016/12/22</td>
+</tr>, <tr>
+<th colspan="6">【事業内容】</th>
+</tr>, <tr>
+<td class="main_data" colspan="6">稟議申請から承認に至るまでの業務効率化を図るためのワークフローパッケージ「X-point」等の開発・販売、クラウドサービスの提供</td>
+</tr>]
+-----------------------------
+[<tr>
+<td class="h2_subtitle_ipodetail" colspan="7"><h2>IPO情報</h2></td>
+</tr>, <tr>
+<th colspan="2">公開株数合計</th>
+<td class="main_data alignright">600,000</td>
+<th>売買単位</th>
+<td class="main_data alignright" colspan="2">100</td>
+</tr>, <tr>
+<th colspan="2">公募株数</th>
+<td class="main_data alignright">200,000</td>
+<th>売出株数</th>
+<td class="main_data alignright" colspan="2">400,000</td>
+</tr>, <tr>
+<th rowspan="2">発行済み株数</th>
+<th>公開日前⇒</th>
+<td class="main_data alignright" colspan="3">2,000,000.00</td>
+</tr>, <tr>
+<th>公開日現在⇒</th>
+<td class="main_data alignright" colspan="3">2,200,000.00</td>
+</tr>, <tr>
+<th rowspan="2">資本金</th>
+<th>公開日前⇒</th>
+<td class="main_data alignright" colspan="3">100,000,000円</td>
+</tr>, <tr>
+<th>公開日現在⇒</th>
+<td class="main_data alignright" colspan="3"> </td>
+</tr>, <tr>
+<th colspan="2">仮条件提示日</th>
+<td class="main_data" colspan="4">2016/12/05</td>
+</tr>, <tr>
+<th colspan="2">ブックビルディング（開始）</th>
+<td class="main_data">2016/12/07</td>
+<th>ブックビルディング（終了）</th>
+<td class="main_data" colspan="2">2016/12/13</td>
+</tr>, <tr>
+<th colspan="2">公募価格決定日</th>
+<td class="main_data" colspan="4">2016/12/14</td>
+</tr>, <tr>
+<th colspan="2">申込期間（開始）</th>
+<td class="main_data">2016/12/15</td>
+<th>申込期間（終了）</th>
+<td class="main_data" colspan="2">2016/12/20</td>
+</tr>, <tr>
+<th colspan="2">仮条件</th>
+<td class="main_data alignright"> </td>
+<th>仮条件のPER（前期ベース）</th>
+<td class="main_data alignright" colspan="2"> </td>
+</tr>, <tr>
+<th colspan="2">公募価格</th>
+<td class="main_data alignright" colspan="4"> </td>
+</tr>, <tr>
+<th colspan="2">公募価格のPER（前期ベース）</th>
+<td class="main_data alignright"> </td>
+<th>公募価格のPBR（前期ベース）</th>
+<td class="main_data alignright" colspan="2"> </td>
+</tr>, <tr>
+<th colspan="2">調達資金使途</th>
+<td class="main_data" colspan="4"> </td>
+</tr>]
+-----------------------------
+[<tr>
+<td class="h2_subtitle_ipodetail" colspan="3"><h2>引受証券会社</h2></td>
+</tr>, <tr>
+<th width="15%">割当</th>
+<th align="center" width="45%">引受証券会社名</th>
+<th align="center" width="40%">電話番号</th>
+</tr>, <tr>
+<td align="right" class="main_data">0%</td>
+<td class="main_data">大和証券</td>
+<td class="main_data">03-5555-2111</td>
+</tr>, <tr>
+<td align="right" class="main_data">0%</td>
+<td class="main_data">いちよし証券</td>
+<td class="main_data">03-3555-6210</td>
+</tr>, <tr>
+<td align="right" class="main_data">0%</td>
+<td class="main_data">ＳＭＢＣ日興証券</td>
+<td class="main_data">03-5644-3111</td>
+</tr>, <tr>
+<td align="right" class="main_data">0%</td>
+<td class="main_data">藍澤證券</td>
+<td class="main_data">03-3272-3118</td>
+</tr>, <tr>
+<td align="right" class="main_data">0%</td>
+<td class="main_data">東洋証券</td>
+<td class="main_data">03-5117-1040</td>
+</tr>]
