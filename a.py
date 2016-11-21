@@ -68,12 +68,20 @@ print("----------------------")
 #-------------------------------------------------------------
 #ipodatatable[5]は幹事
 table5 = bsObj.findAll("table",{"class":"ipodatatable"})[5]
+kanji_index = [1,4,7,10,13,16,19,22,25,28,31,34,37,40,43,46,49,52,55,58,61,64,67,70,73,76,79]
+kanji_list = []
 
-kanjis_table = table5.findAll("td",class_="main_data")
+for i in kanji_index:
+    kanji_name = table5.findAll("td",class_="main_data")[i]
+    kanji_list.append(kanji_name.get_text())
 
-for row in kanjis_table:
-    csvRow = []
-    for cell in row.findAll():
-        csvRow.append(cell.get_text())
+print(kanji_list)
 
-    print(csvRow)
+#for row in kanjis_table:
+#    csvRow = []
+#    for cell in row.findAll():
+#        csvRow.append(cell.get_text())
+
+#kanjis_table = table5.findAll("td",class_="main_data")[1]
+
+#print(kanjis_table.get_text())
