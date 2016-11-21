@@ -22,10 +22,10 @@ bsObj = BeautifulSoup(page_source.content,"html.parser") #page_source.textだと
 
 #テーブルを指定する
 #ipodatatable[0]は企業名　コード、市場、主幹事、承認日、公開日
-title = bsObj.findAll("h1",class_="h1_title_ipodata")
+title = bsObj.find("h1",class_="h1_title_ipodata")
 #aaa = title.findAll(title)
 #aaa = title.get_text()
-print(title)
+print(title.get_text())
 
 
 table = bsObj.findAll("table",{"class":"ipodatatable"})[0]
