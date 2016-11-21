@@ -18,22 +18,19 @@ url = "http://www.tokyoipo.com/ipo/detail.php?id=pre&seqid=2347" #euc-jpでし�
 page_source = requests.get(url)
 #print(page_source.content) #print(page_source)だけだとhttpのステータスが帰ってくる
 bsObj = BeautifulSoup(page_source.content,"html.parser") #page_source.textだと文字化けしる
+#print(bsObj.prettify()) #htmlデータ分析用
 
 #テーブルを指定する
 #ipodatatable[0]は企業名　コード、市場、主幹事、承認日、公開日
+title = bsObj.findAll("h1",class_="h1_title_ipodata")
+#aaa = title.findAll(title)
+#aaa = title.get_text()
+print(title)
+
+
 table = bsObj.findAll("table",{"class":"ipodatatable"})[0]
-rows = table.findAll("tr")
-print("-----------------------------")
-print(rows)
 
 #ipodatatable[1]はBB開始日、抽選日,購入申込日
-table = bsObj.findAll("table",{"class":"ipodatatable"})[1]
-rows = table.findAll("tr")
-print("-----------------------------")
-print(rows)
+
 
 #ipodatatable[5]は幹事
-table = bsObj.findAll("table",{"class":"ipodatatable"})[5]
-rows = table.findAll("tr")
-print("-----------------------------")
-print(rows)
