@@ -22,26 +22,58 @@ bsObj = BeautifulSoup(page_source.content,"html.parser") #page_source.textだと
 
 #-------------------------------------------------------------
 #ipodatatable[0]は企業名　コード、市場、主幹事、承認日、公開日
-table = bsObj.findAll("table",{"class":"ipodatatable"})[0]
+table0 = bsObj.findAll("table",{"class":"ipodatatable"})[0]
 
 #企業名 テーブルの中から企業名を抜き出す
-corp_name = table.find("h1",class_="h1_title_ipodata")
+corp_name = table0.find("h1",class_="h1_title_ipodata")
 print(corp_name.get_text())
 #企業コード
-corp_code = table.findAll("td",class_="main_data aligncenter")[0]
+corp_code = table0.findAll("td",class_="main_data aligncenter")[0]
 print(corp_code.get_text())
 #上場する市場
-corp_market = table.findAll("td",class_="main_data aligncenter")[2]
+corp_market = table0.findAll("td",class_="main_data aligncenter")[2]
 print(corp_market.get_text())
 #認証日
-ninshou_bi = table.findAll("td",class_="main_data aligncenter")[3]
+ninshou_bi = table0.findAll("td",class_="main_data aligncenter")[3]
 print(ninshou_bi.get_text())
 #上場日
-jyoujyou_bi = table.findAll("td",class_="main_data aligncenter")[4]
+jyoujyou_bi = table0.findAll("td",class_="main_data aligncenter")[4]
 print(jyoujyou_bi.get_text())
 
+print("----------------------")
 #-------------------------------------------------------------
 #ipodatatable[1]はBB開始日、抽選日,購入申込日
+table1 = bsObj.findAll("table",{"class":"ipodatatable"})[1]
+#仮条件提示日
+kari_bi = table1.findAll("td",class_="main_data")[8]
+print(kari_bi.get_text())
+#ブックビルディング（開始）
+bb_kaishi_bi = table1.findAll("td",class_="main_data")[9]
+print(bb_kaishi_bi.get_text())
+#ブックビルディング（終了）
+bb_shuryou_bi = table1.findAll("td",class_="main_data")[10]
+print(bb_shuryou_bi.get_text())
+#公募価格決定日
+chusen_bi = table1.findAll("td",class_="main_data")[11]
+print(chusen_bi.get_text())
+#購入申込期間（開始）
+kounyu_kaishi_bi = table1.findAll("td",class_="main_data")[12]
+print(kounyu_kaishi_bi.get_text())
+#購入申込期間（終了）
+kounyu_shuryou_bi = table1.findAll("td",class_="main_data")[13]
+print(kounyu_shuryou_bi.get_text())
 
+print("----------------------")
 
+#-------------------------------------------------------------
 #ipodatatable[5]は幹事
+table5 = bsObj.findAll("table",{"class":"ipodatatable"})[5]
+
+kanjis_table = table5.findAll("td",class_="main_data")
+
+for row in kanjis_table:
+    csvRow = []
+    for cell in row.findAll():
+        csvRow.append(cell.get_text())
+
+    print(csvRow)

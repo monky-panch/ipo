@@ -1,7 +1,28 @@
------------------------------
-[<td colspan="6"><h1 class="h1_title_ipodata">（株）エイトレッド</h1>
-<div class="ipodatatble_divchart">
-<a class="minkabubtn" href="http://minkabu.jp/stock/3969" target="_blank">▶株価・チャート</a> 
-        <a class="kaijibtn" href="http://post.tokyoipo.com/visitor/search_by_brand/index.php?brand_code=3969" target="_blank">▶開示情報</a>
-</div>
-</td>, <td class="main_data aligncenter">3969</td>, <td class="main_data aligncenter">情報・通信業</td>, <td class="main_data aligncenter">マザ</td>, <td class="main_data">大和証券      </td>, <td class="main_data aligncenter">2016/11/18</td>, <td class="main_data aligncenter">2016/12/22</td>, <td class="main_data" colspan="6">稟議申請から承認に至るまでの業務効率化を図るためのワークフローパッケージ「X-point」等の開発・販売、クラウドサービスの提供</td>]
+（株）エイトレッド
+3969
+マザ
+2016/11/18
+2016/12/22
+----------------------
+2016/12/05
+2016/12/07
+2016/12/13
+2016/12/14
+2016/12/15
+2016/12/20
+----------------------
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
