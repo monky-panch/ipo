@@ -20,16 +20,27 @@ page_source = requests.get(url)
 bsObj = BeautifulSoup(page_source.content,"html.parser") #page_source.textだと文字化けしる
 #print(bsObj.prettify()) #htmlデータ分析用
 
-#テーブルを指定する
+#-------------------------------------------------------------
 #ipodatatable[0]は企業名　コード、市場、主幹事、承認日、公開日
-title = bsObj.find("h1",class_="h1_title_ipodata")
-#aaa = title.findAll(title)
-#aaa = title.get_text()
-print(title.get_text())
-
-
 table = bsObj.findAll("table",{"class":"ipodatatable"})[0]
 
+#企業名 テーブルの中から企業名を抜き出す
+corp_name = table.find("h1",class_="h1_title_ipodata")
+print(corp_name.get_text())
+#企業コード
+corp_code = table.findAll("td",class_="main_data aligncenter")[0]
+print(corp_code.get_text())
+#上場する市場
+corp_market = table.findAll("td",class_="main_data aligncenter")[2]
+print(corp_market.get_text())
+#認証日
+ninshou_bi = table.findAll("td",class_="main_data aligncenter")[3]
+print(ninshou_bi.get_text())
+#上場日
+jyoujyou_bi = table.findAll("td",class_="main_data aligncenter")[4]
+print(jyoujyou_bi.get_text())
+
+#-------------------------------------------------------------
 #ipodatatable[1]はBB開始日、抽選日,購入申込日
 
 
