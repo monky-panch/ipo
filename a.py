@@ -5,8 +5,13 @@ import requests
 from bs4 import BeautifulSoup
 import os
 import time
+import pandas
+
 
 #とりあえず、tokyoipoの新規上場承認銘柄ページから情報を取り出す。
+#evernoteにはメール(nekotaro@evernote)で、
+#googleカレンダーにはapiで
+#登録する
 #あとで、リストからURL抽出して更新するようにできるといいな。
 
 #requestsの使い方
@@ -68,14 +73,25 @@ print("----------------------")
 #-------------------------------------------------------------
 #ipodatatable[5]は幹事
 table5 = bsObj.findAll("table",{"class":"ipodatatable"})[5]
-kanji_index = [1,4,7,10,13,16,19,22,25,28,31,34,37,40,43,46,49,52,55,58,61,64,67,70,73,76,79]
-kanji_list = []
+#kanji_rows = table5.findAll("tr",class_="main_data")
+kanji_rows = table5.findAll("tr") #tr行だけ抜き出し
 
-for i in kanji_index:
-    kanji_name = table5.findAll("td",class_="main_data")[i]
-    kanji_list.append(kanji_name.get_text())
+try:
+    for row in kanji_rows:
+        kanjiRow = []
+        for cell in row.findAll(["td"]):
+            #print(cell.get_text()) #確認用
+            kanjiRow.append(cell.get_text())
+finally:
+    kanji = pandas.Series(kanjiRow)
 
-print(kanji_list)
+print(kanji)
+
+#for i in kanji_index:
+#    kanji_name = table5.findAll("td",class_="main_data")[i]
+#    kanji_list.append(kanji_name.get_text())
+
+#print(kanji_list)
 
 #for row in kanjis_table:
 #    csvRow = []
